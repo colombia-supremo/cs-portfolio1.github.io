@@ -5,6 +5,186 @@
     <title>Katerina Cohen</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main">
+      <div class="main__title">
+
+      </div>
+      <nav class="main__menu__wrapper">
+        <div class="main__menu__social">
+          <i class="main__menu__social__icon fa fa-vk" aria-hidden="true"></i>
+          <i class="main__menu__social__icon fa fa-odnoklassniki" aria-hidden="true"></i>
+          <i class="main__menu__social__icon fa fa-facebook" aria-hidden="true"></i>
+          <i class="main__menu__social__icon fa fa-instagram" aria-hidden="true"></i>
+          <i class="main__menu__social__icon fa fa-youtube" aria-hidden="true"></i>
+          <a class="main__menu__social__login" href="#">Войти</a>
+        </div>
+        <ul class="main__menu">
+          <li class="main__menu__item">Обо мне</li>
+          <li class="main__menu__item">Блог</li>
+          <li class="main__menu__item">Книги</li>
+          <li class="main__menu__item">Проекты</li>
+          <li class="main__menu__item">#ЗапискиБольногоЭго</li>
+          <li class="main__menu__item">Видео</li>
+        </ul>
+        <input class="main__menu__search" type="search" value="Найти">
+      </nav>
+    </header>
+
+    <section class="tagcloud">
+      <div class="tagcloud__container">
+        <div class="tagcloud">
+          <canvas width="1600px" height="300px" id="tagcloud__canvas">
+            <p>Браузер иногда нужно обновлять</p>
+          </canvas>
+        </div>
+        <div id="tagcloud__tags">
+          <ul>
+            <li><a href="#">Философия</a></li>
+            <li><a href="#">Семинары</a></li>
+            <li><a href="#">Практики</a></li>
+            <li><a href="#">Отношения</a></li>
+            <li><a href="#">Семья</a></li>
+            <li><a href="#">Любовь</a></li>
+            <li><a href="#">Творчество</a></li>
+            <li><a href="#">Учителя</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <h2 class="blog__header">Блог</h2>
+
+      <div class="blog__row">
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__first"></div>
+        </div>
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__second">
+            <h3 class="blog__entry__second__textbox">Путешествие в Норвегию.<br>Как это было?</h3>
+          </div>
+        </div>
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__third"></div>
+        </div>
+      </div>
+
+      <div class="blog__row">
+        <div class="blog__entry__wrapper--double">
+          <div class="blog__entry blog__entry__fourth">
+            <h3 class="blog__entry__fourth__imglabel">Музыка улиц Парижа<br><small>14.04.2017</small></h3>
+            <p class="blog__entry__fourth__textbox">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+            </p>
+          </div>
+        </div>
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__fifth">
+            <h3 class="blog__entry__fifth__textbox">Выходные в Сербии. Особенности культуры.<br><small>14.04.2017</small></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog__row">
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__sixth"></div>
+        </div>
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__seventh"></div>
+        </div>
+        <div class="blog__entry__wrapper">
+          <div class="blog__entry blog__entry__eighth"></div>
+        </div>
+      </div>
+
+      <div class="bgstripedark"></div>
+    </section>
+
+    <section class="projects">
+      <h2 class="projects__header">Проекты</h2>
+      <div class="projects__wrapper">
+        <div class="projects__img project1"></div>
+        <div class="projects__summary">
+          <h3 class="projects__summary__header">Интернет магазин кофейных зёрен</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+        </div>
+      </div>
+
+      <div class="projects__wrapper">
+        <div class="projects__img project2"></div>
+        <div class="projects__summary">
+          <h3 class="projects__summary__header">Интернет галерея фотографий</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+        </div>
+      </div>
+      <div class="bgstripelight"></div>
+    </section>
+
+    <section class="ego">
+      <h2 class="ego__header">#ЗапискиБольногоЭго</h2>
+
+      <div class="ego__row">
+        <div class="ego__entry__wrapper">
+          <img class="ego__entry" src="img/ego1.jpg" alt="">
+        </div>
+        <div class="ego__entry__wrapper">
+          <img class="ego__entry" src="img/ego2.jpg" alt="">
+        </div>
+        <div class="ego__entry__wrapper">
+          <img class="ego__entry" src="img/ego3.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="books">
+      <h2 class="books__header">Книги</h2>
+      <div class="books__wrapper">
+        <img class="books__img" src="img/article.jpg" alt="">
+        <div class="books__summary">
+          <h3 class="books__summary__header">Одетые в белое</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequuntur, sunt! Recusandae similique a magnam, fuga temporibus vitae eligendi, maiores dignissimos iste cumque illo doloribus non corporis odit perferendis tempora.
+          Adipisci quod velit, labore quidem dolorum reprehenderit, placeat dignissimos dolore unde officiis, delectus nihil consectetur earum ea voluptatem cum nobis hic cupiditate.
+          <a class="books__summary__more" href="#">Читать книгу&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="newsletter">
+      <nav class="newsletter__menu__wrapper">
+        <ul class="newsletter__menu">
+          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Обо мне</a></li>
+          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Блог</a></li>
+          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Книги</a></li>
+        </ul>
+        <ul class="newsletter__menu">
+          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Проекты</a></li>
+          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">#ЗапискиБольногоЭго</a></li>
+          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Видео</a></li>
+        </ul>
+      </nav>
+
+      <div class="newsletter__subscribe">
+        <h3 class="newsletter__subscribe__header">Подписаться на рассылку</h3>
+        <div class="newsletter__subscribe__input">
+          <input class="newsletter__subscribe__textfield" type="text" value="Ваш e-mail">
+          <input class="newsletter__subscribe__button" type="submit" name="subscribe" value="Всё!">
+        </div>
+      </div>
+
+      <div class="newsletter__social">
+        <div class="newsletter__social__logo"></div>
+        <p class="newsletter__social__icons">
+          <i class="newsletter__social__icon fa fa-vk" aria-hidden="true"></i>
+          <i class="newsletter__social__icon fa fa-odnoklassniki" aria-hidden="true"></i>
+          <i class="newsletter__social__icon fa fa-facebook" aria-hidden="true"></i>
+          <i class="newsletter__social__icon fa fa-instagram" aria-hidden="true"></i>
+          <i class="newsletter__social__icon fa fa-youtube" aria-hidden="true"></i>
+        </p>
+      </div>
+    </footer>
+
     <script src="https://use.fontawesome.com/a94f2d9b54.js"></script>
     <script src="tagcanvas.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -32,215 +212,5 @@
         }
       };
     </script>
-  </head>
-  <body>
-    <header class="main section group">
-      <div class="main__title__wrapper col span_3_of_5">
-        <img class="main__title" src="img/kcohen.jpg" alt="Katerina Cohen">
-      </div>
-      <nav class="main__menu col span_2_of_5">
-        <div class="main__menu__social">
-          <i class="main__menu__social__icon fa fa-vk" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-odnoklassniki" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-facebook" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-instagram" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-youtube" aria-hidden="true"></i>
-          <a class="main__menu__social__login" href="#">Войти</a>
-        </div>
-        <div class="main__menu__wrapper">
-      	  <ul class="main__menu">
-      	    <li class="main__menu__item">Обо мне</li>
-      	    <li class="main__menu__item">Блог</li>
-      	    <li class="main__menu__item">Книги</li>
-      	    <li class="main__menu__item">Проекты</li>
-      	    <li class="main__menu__item">#ЗапискиБольногоЭго</li>
-      	    <li class="main__menu__item">Видео</li>
-      	  </ul>
-          <input class="main__menu__search" type="search" value="Найти">
-        </div>
-      </nav>
-    </header>
-
-    <div class="tagcloud section group">
-      <div class="tagcloud__container col span_5_of_5">
-        <div class="tagcloud">
-          <canvas width="1600px" height="300px" id="tagcloud__canvas">
-            <p>Браузер иногда нужно обновлять</p>
-          </canvas>
-        </div>
-        <div id="tagcloud__tags">
-          <ul>
-            <li><a href="#">Философия</a></li>
-            <li><a href="#">Семинары</a></li>
-            <li><a href="#">Практики</a></li>
-            <li><a href="#">Отношения</a></li>
-            <li><a href="#">Семья</a></li>
-            <li><a href="#">Любовь</a></li>
-            <li><a href="#">Творчество</a></li>
-            <li><a href="#">Учителя</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <section class="blog section group">
-      <h2 class="blog__header">Блог</h2>
-
-      <div class="blog__row">
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__first">
-
-          </div>
-        </div>
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__second">
-            <h3 class="blog__entry__second__textbox">Путешествие в Норвегию.<br>Как это было?</h3>
-          </div>
-        </div>
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__third">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="blog__row">
-        <div class="blog__entry__wrapper--double col span_2_of_5">
-          <div class="blog__entry blog__entry__fourth">
-            <h3 class="blog__entry__fourth__imglabel">Музыка улиц Парижа<br><small>14.04.2017</small></h3>
-            <p class="blog__entry__fourth__textbox">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
-            </p>
-          </div>
-        </div>
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__fifth">
-            <h3 class="blog__entry__fifth__textbox">Выходные в Сербии. Особенности культуры.<br><small>14.04.2017</small></h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="blog__row">
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__sixth">
-
-          </div>
-        </div>
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__seventh">
-
-          </div>
-        </div>
-        <div class="blog__entry__wrapper col span_1_of_5">
-          <div class="blog__entry blog__entry__eighth">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="bgstripedark col span_5_of_5"></div>
-    </section>
-
-    <section class="projects section group">
-      <h2 class="projects__header">Проекты</h2>
-
-      <div class="projects__row">
-        <div class="projects__wrapper col span_3_of_5">
-          <img class="projects__img" src="img/project1.jpg" alt="">
-          <div class="projects__summary">
-            <h3 class="projects__summary__header">Интернет магазин кофейных зёрен</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odit incidunt accusantium debitis in, eveniet quam deserunt architecto nesciunt nihil ipsam quod excepturi velit asperiores iste maiores repellendus vel provident.
-          </div>
-        </div>
-      </div>
-
-      <div class="projects__row">
-        <div class="projects__wrapper col span_3_of_5">
-          <img class="projects__img" src="img/project2.jpg" alt="">
-          <div class="projects__summary">
-            <h3 class="projects__summary__header">Интернет галерея фотографий</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ex, nostrum qui placeat excepturi, praesentium dolorum, nulla atque magni voluptates itaque quas, fugiat ab eum cumque. Accusantium laborum esse quaerat.
-          </div>
-        </div>
-      </div>
-
-      <div class="bgstripelight col span_5_of_5"></div>
-    </section>
-
-    <section class="ego section group">
-      <h2 class="ego__header">#ЗапискиБольногоЭго</h2>
-
-      <div class="ego__row">
-        <div class="ego__entry__wrapper col span_1_of_5">
-          <img class="ego__entry" src="img/ego1.jpg" alt="">
-        </div>
-        <div class="ego__entry__wrapper col span_1_of_5">
-          <img class="ego__entry" src="img/ego2.jpg" alt="">
-        </div>
-        <div class="ego__entry__wrapper col span_1_of_5">
-          <img class="ego__entry" src="img/ego3.jpg" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="books section group">
-      <h2 class="books__header">Книги</h2>
-
-      <div class="books__row">
-        <div class="books__wrapper col span_3_of_5">
-          <img class="books__img" src="img/article.jpg" alt="">
-          <div class="books__summary">
-            <h3 class="books__summary__header">Одетые в белое</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequuntur, sunt! Recusandae similique a magnam, fuga temporibus vitae eligendi, maiores dignissimos iste cumque illo doloribus non corporis odit perferendis tempora.
-            Adipisci quod velit, labore quidem dolorum reprehenderit, placeat dignissimos dolore unde officiis, delectus nihil consectetur earum ea voluptatem cum nobis hic cupiditate.
-            <a class="books__summary__more" href="#">Читать книгу&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="instagram section group">
-      <h2 class="instagram__header">Instagram</h2>
-
-      <div class="instagram__container col span_5_of_5">
-
-      </div>
-    </section>
-
-    <footer class="newsletter section group">
-      <nav class="newsletter__menu__wrapper">
-        <ul class="newsletter__menu">
-          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Обо мне</a></li>
-          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Блог</a></li>
-          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Книги</a></li>
-        </ul>
-      </nav>
-      <nav class="newsletter__menu__wrapper">
-        <ul class="newsletter__menu">
-          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Проекты</a></li>
-          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">#ЗапискиБольногоЭго</a></li>
-          <li class="newsletter__menu__item"><a class="newsletter__menu__item__link" href="">Видео</a></li>
-        </ul>
-      </nav>
-      <div class="newsletter__subscribe__wrapper">
-        <div class="newsletter__subscribe">
-          <p class="newsletter__subscribe__header">Подписаться на рассылку</p>
-          <input class="newsletter__subscribe__textfield" type="text" value="Ваш e-mail">
-          <input class="newsletter__subscribe__button" type="submit" name="subscribe" value="Всё!">
-        </div>
-      </div>
-      <div class="newsletter__social__wrapper">
-        <div class="newsletter__social">
-          <img class="newsletter__social__logo" src="img/logo.jpg" alt="">
-          <p class="newsletter__social__icons">
-            <i class="newsletter__social__icon fa fa-vk" aria-hidden="true"></i>
-            <i class="newsletter__social__icon fa fa-odnoklassniki" aria-hidden="true"></i>
-            <i class="newsletter__social__icon fa fa-facebook" aria-hidden="true"></i>
-            <i class="newsletter__social__icon fa fa-instagram" aria-hidden="true"></i>
-            <i class="newsletter__social__icon fa fa-youtube" aria-hidden="true"></i>
-          </p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
