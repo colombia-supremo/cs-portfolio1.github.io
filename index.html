@@ -13,20 +13,20 @@
       </div>
       <nav class="main__menu__wrapper">
         <div class="main__menu__social">
-          <i class="main__menu__social__icon fa fa-vk" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-odnoklassniki" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-facebook" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-instagram" aria-hidden="true"></i>
-          <i class="main__menu__social__icon fa fa-youtube" aria-hidden="true"></i>
+          <a href="#"><i class="main__menu__social__icon fa fa-vk" aria-hidden="true"></i></a>
+          <a href="#"><i class="main__menu__social__icon fa fa-odnoklassniki" aria-hidden="true"></i></a>
+          <a href="#"><i class="main__menu__social__icon fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="main__menu__social__icon fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="main__menu__social__icon fa fa-youtube" aria-hidden="true"></i></a>
           <a class="main__menu__social__login" href="#">Войти</a>
         </div>
         <ul class="main__menu">
-          <li class="main__menu__item">Обо мне</li>
-          <li class="main__menu__item">Блог</li>
-          <li class="main__menu__item">Книги</li>
-          <li class="main__menu__item">Проекты</li>
-          <li class="main__menu__item">#ЗапискиБольногоЭго</li>
-          <li class="main__menu__item">Видео</li>
+          <li class="main__menu__item"><a class="main__menu__item__link" href="#">Обо мне</a></li>
+          <li class="main__menu__item"><a class="main__menu__item__link" href="#">Блог</a></li>
+          <li class="main__menu__item"><a class="main__menu__item__link" href="#">Книги</a></li>
+          <li class="main__menu__item"><a class="main__menu__item__link" href="#">Проекты</a></li>
+          <li class="main__menu__item"><a class="main__menu__item__link" href="#">#ЗапискиБольногоЭго</a></li>
+          <li class="main__menu__item"><a class="main__menu__item__link" href="#">Видео</a></li>
         </ul>
         <input class="main__menu__search" type="search" value="Найти">
       </nav>
@@ -106,17 +106,21 @@
       <h2 class="projects__header">Проекты</h2>
       <div class="projects__wrapper">
         <div class="projects__img project1"></div>
-        <div class="projects__summary">
-          <h3 class="projects__summary__header">Интернет магазин кофейных зёрен</h3>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+        <div class="projects__summary__wrapper project1">
+          <div class="projects__summary">
+            <h3 class="projects__summary__header">Интернет магазин кофейных зёрен</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+          </div>
         </div>
       </div>
 
       <div class="projects__wrapper">
         <div class="projects__img project2"></div>
-        <div class="projects__summary">
-          <h3 class="projects__summary__header">Интернет галерея фотографий</h3>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+        <div class="projects__summary__wrapper project2">
+          <div class="projects__summary">
+            <h3 class="projects__summary__header">Интернет галерея фотографий</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ea ipsa debitis eligendi quam libero, odit commodi eius delectus enim excepturi aliquam veritatis architecto vero a, itaque perspiciatis corporis aut.
+          </div>
         </div>
       </div>
       <div class="bgstripelight"></div>
@@ -141,11 +145,15 @@
     <section class="books">
       <h2 class="books__header">Книги</h2>
       <div class="books__wrapper">
-        <img class="books__img" src="img/article.jpg" alt="">
+        <div class="books__img"></div>
         <div class="books__summary">
-          <h3 class="books__summary__header">Одетые в белое</h3>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequuntur, sunt! Recusandae similique a magnam, fuga temporibus vitae eligendi, maiores dignissimos iste cumque illo doloribus non corporis odit perferendis tempora.
-          Adipisci quod velit, labore quidem dolorum reprehenderit, placeat dignissimos dolore unde officiis, delectus nihil consectetur earum ea voluptatem cum nobis hic cupiditate.
+          <div class="books__summary__text__wrapper">
+            <div class="books__summary__text">
+              <h3 class="books__summary__header">Одетые в белое</h3>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consequuntur, sunt! Recusandae similique a magnam, fuga temporibus vitae eligendi, maiores dignissimos iste cumque illo doloribus non corporis odit perferendis tempora.
+              Adipisci quod velit, labore quidem dolorum reprehenderit, placeat dignissimos dolore unde officiis, delectus nihil consectetur earum ea voluptatem cum nobis hic cupiditate.
+            </div>
+          </div>
           <a class="books__summary__more" href="#">Читать книгу&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -176,11 +184,11 @@
       <div class="newsletter__social">
         <div class="newsletter__social__logo"></div>
         <p class="newsletter__social__icons">
-          <i class="newsletter__social__icon fa fa-vk" aria-hidden="true"></i>
-          <i class="newsletter__social__icon fa fa-odnoklassniki" aria-hidden="true"></i>
-          <i class="newsletter__social__icon fa fa-facebook" aria-hidden="true"></i>
-          <i class="newsletter__social__icon fa fa-instagram" aria-hidden="true"></i>
-          <i class="newsletter__social__icon fa fa-youtube" aria-hidden="true"></i>
+          <a href="#"><i class="newsletter__social__icon fa fa-vk" aria-hidden="true"></i></a>
+          <a href="#"><i class="newsletter__social__icon fa fa-odnoklassniki" aria-hidden="true"></i></a>
+          <a href="#"><i class="newsletter__social__icon fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="newsletter__social__icon fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="newsletter__social__icon fa fa-youtube" aria-hidden="true"></i></a>
         </p>
       </div>
     </footer>

@@ -52,6 +52,7 @@ html {
 
 section, header, footer {
   position: relative;
+  overflow: hidden;
 }
 
 .blog__header,
@@ -74,8 +75,9 @@ section, header, footer {
   width: 100%;
 }
 
-/* Custom CSS
+/* Header
  * --------------------------------------- */
+
 .main {
   display: flex;
   flex-direction: row;
@@ -107,12 +109,19 @@ section, header, footer {
 }
 
 .main__menu__social {
+  width: 100%:
+  flex: 0 1 auto;
   margin: 1rem;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .main__menu__social__icon {
   margin: 1rem;
+  color: #000000;
 }
 
 .main__menu__social__login {
@@ -122,8 +131,13 @@ section, header, footer {
 }
 
 .main__menu {
-  width: 39.04%;
-  flex: 0 0 auto;
+  width: 100%:
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .main__menu__item {
@@ -131,10 +145,18 @@ section, header, footer {
   font-size: 1.5rem;
 }
 
+.main__menu__item__link {
+  color: #000000;
+}
+
 .main__menu__search {
+  flex: 0 1 auto;
   margin: 1rem;
   font-size: 1.5rem;
 }
+
+/* Tag cloud
+ * --------------------------------------- */
 
 .tagcloud__container {
   margin: 0;
@@ -157,11 +179,15 @@ section, header, footer {
   font-size: 1.5rem;
 }
 
+/* Blog section
+ * --------------------------------------- */
+
 .blog__header {
   align-self: left;
 }
 
 .blog__row {
+  flex: 0 1 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -302,6 +328,9 @@ section, header, footer {
   background-color: #332a29;
 }
 
+/* Projects section
+ * --------------------------------------- */
+
 .projects__wrapper {
   background-color: #332a29;
   display: flex;
@@ -322,17 +351,20 @@ section, header, footer {
   background-position: center;
 }
 
-.project1 {
+.projects__img.project1 {
   background-image: url(../img/project1.jpg);
 }
 
-.project2 {
+.projects__img.project2 {
   background-image: url(../img/project2.jpg);
 }
 
-.projects__summary {
+.projects__summary__wrapper {
   flex: 1 1 auto;
   width: 34%;
+}
+
+.projects__summary {
   font-size: 1rem;
   padding: 1rem;
   line-height: 1rem;
@@ -357,6 +389,9 @@ section, header, footer {
   z-index: -5;
   background-color: #f6f6f6;
 }
+
+/* Random ramblings section
+ * --------------------------------------- */
 
 .ego__header {
   align-self: left;
@@ -388,25 +423,38 @@ section, header, footer {
   background-repeat: no-repeat;
 }
 
+/* Books section
+ * --------------------------------------- */
+
 .books__header {
   align-self: flex-end;
 }
 
 .books__wrapper {
-  margin-bottom: 1.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  margin-bottom: 1rem;
   background-color: #ffffff;
   width: 59.36%;
-  margin-bottom: 2rem;
 }
 
 .books__img {
-  float: left;
   width: 32.26%;
+  background-image: url(../img/article.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .books__summary {
-  float: right;
-  width: 67.74%;
+  color: #000000;
+  text-align: justify;
+}
+
+.books__summary__text {
   font-size: 1rem;
   padding: 2rem;
   line-height: 1rem;
@@ -424,8 +472,7 @@ section, header, footer {
 .books__summary__more {
   display: block;
   float: right;
-  margin-top: 2vw;
-  padding: 0.75vw 2.5vw 0.75vw 1rem;
+  padding: 0.75vw 2.5vw;
   font-size: 1rem;
   line-height: 1rem;
   color: #ffffff;
@@ -444,6 +491,9 @@ section, header, footer {
   background-color: white;
   transform: rotate(45deg);
 }
+
+/* Footer
+ * --------------------------------------- */
 
 .newsletter {
   display: flex;
@@ -503,6 +553,7 @@ section, header, footer {
   background-color: #332a29;
   font-size: 1rem;
   color: #ffffff;
+  padding-left: 1rem;
 }
 
 .newsletter__subscribe__button {
@@ -544,11 +595,75 @@ section, header, footer {
   text-align: center;
 }
 
+/* Responsive typography
+ * --------------------------------------- */
+
+@media screen and (min-width: 1250px) {
+  .main__menu__social,
+  .main__menu__social__login,
+  .main__menu__item,
+  .main__menu__search,
+  #tagcloud_tags,
+  .blog__header,
+  .blog__entry,
+  .projects__header,
+  .ego__header,
+  .books__header,
+  .blog__entry__second__textbox,
+  .blog__entry__fifth__textbox,
+  .books__summary__header,
+  .projects__summary__header {
+    font-size: 1.92vw;
+    line-height: 1.92vw;
+  }
+
+  .projects__summary,
+  .books__summary__text,
+  .books__summary__more,
+  .newsletter__menu__item__link,
+  .newsletter__subscribe__header,
+  .blog__entry__fourth__textbox,
+  .blog__entry__fourth__imglabel{
+    font-size: 1.28vw;
+    line-height: 1.28vw;
+  }
+
+  .blog__entry {
+    padding: 1.28vw;
+  }
+
+  .projects__summary {
+    padding: 1.28vw;
+  }
+
+  .books__summary {
+    padding: 2.56vw;
+  }
+
+  .newsletter__subscribe__textfield {
+    height: 2.56vw;
+    font-size: 1.28vw;
+    padding-left: 1.28vw;
+  }
+
+  .newsletter__subscribe__button {
+    height: 2.56vw;
+    font-size: 1.28vw;
+  }
+
+  .newsletter__social__icons {
+    font-size: 1.92vw;
+  }
+}
+
+/* Structural breakpoints
+ * --------------------------------------- */
+
 @media screen and (max-width: 1000px) {
    .main {
      background-image: url(../img/kcohen.jpg);
-     background-position: center;
-     background-size: cover;
+     background-position: bottom;
+     background-size: auto;
      background-repeat: no-repeat;
    }
 
@@ -557,10 +672,11 @@ section, header, footer {
    }
 
   .main__menu__wrapper {
-    width: 390.4px;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.7);
+    padding: 0;
   }
 
   .blog__row:nth-child(2) {
@@ -573,18 +689,10 @@ section, header, footer {
     width: 187.2px;
   }
 
-  .blog__entry__wrapper:last-child {
-    margin-right: 0;
-  }
-
   .blog__entry__wrapper--double {
     margin-bottom: 1rem;
     margin-right: 1rem;
     width: 390.4px;
-  }
-
-  .blog__entry__wrapper--double:last-child {
-    margin-right: 0;
   }
 
   .bgstripedark {
@@ -611,66 +719,104 @@ section, header, footer {
     width: 593.6px;
   }
 
+  .books__summary__more {
+    margin-top: 20px;
+    padding: 7.5px 25px 7.5px 25px;
+  }
+
+  .books__summary__more:after {
+    margin: -4px 0 0 14px;
+    height: 22px;
+    width: 22px;
+  }
+
   #tagcloud__canvas {
     display: none;
   }
 }
 
-/* Responsive typography
- * --------------------------------------- */
-@media screen and (min-width: 1250px) {
-  .main__menu__social,
-  .main__menu__social__login,
-  .main__menu__item,
-  .main__menu__search,
-  #tagcloud_tags,
-  .blog__header,
-  .blog__entry,
-  .projects__header,
-  .ego__header,
-  .books__header,
-  .blog__entry__second__textbox,
-  .blog__entry__fifth__textbox,
-  .books__summary__header,
-  .projects__summary__header {
-    font-size: 1.92vw;
-    line-height: 1.92vw;
+@media screen and (max-width: 610px) {
+  .main__menu__wrapper {
+    width: auto;
   }
 
-  .projects__summary,
-  .books__summary,
-  .books__summary__more,
-  .newsletter__menu__item__link,
-  .newsletter__subscribe__header,
-  .blog__entry__fourth__textbox,
-  .blog__entry__fourth__imglabel{
-    font-size: 1.28vw;
-    line-height: 1.28vw;
+  .blog__entry__wrapper,
+  .blog__entry__wrapper--double {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
   }
 
-  .blog__entry {
-    padding: 1.28vw;
+  .projects__wrapper {
+    width: 100%;
+  }
+
+  .projects__img {
+    display: none;
+  }
+
+  .project1.projects__summary__wrapper {
+    background-image: url(../img/project1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .project2.projects__summary__wrapper {
+    background-image: url(../img/project2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .projects__summary {
-    padding: 1.28vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    font-weight: bold;
   }
 
-  .books__summary {
-    padding: 2.56vw;
+  .ego__entry__wrapper,
+  .ego__entry__wrapper--double {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
   }
 
-  .newsletter__subscribe__textfield {
-    height: 2.56vw;
-    font-size: 1.28vw;
+  .books__wrapper {
+    width: 100%;
   }
 
-  .newsletter__subscribe__button {
-    height: 2.56vw;
-    font-size: 1.28vw;
+  .books__img {
+    display: none;
   }
 
-  .newsletter__social__icons {
-    font-size: 1.92vw;
+  .books__summary__text__wrapper {
+    background-image: url(../img/article.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .books__summary__text {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .blog__header,
+  .projects__header,
+  .ego__header,
+  .books__header {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .blog {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .blog__entry__wrapper--double {
+    display: none;
   }
 }
